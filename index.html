@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1F2236">
+<title>Site que funciona | [MARCA]</title>
+<meta name="description" content="Site de 15 a 20 páginas em inglês, indexado no Google, com review em destaque, feito pro celular e com SMS automático em todo contato. $297/mês, sem contrato, no ar em 10 dias úteis.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%89%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1F2236; --gold:#E8A743; --ink:#111827; --paper:#fff; --wash:#F1F1F1;
+  --line:#E3E4E8; --mut:#5B5F6B; --mut-dark:#C4C6CD;
+  --r:10px; --rl:12px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0; background:var(--wash); color:#000;
+  font-family:"Sora",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased}
+img{max-width:100%; display:block}
+a{color:inherit}
+.wrap{max-width:1180px; margin:0 auto; padding:0 20px}
+h1,h2,h3{margin:0 0 16px; line-height:1.16; letter-spacing:-.01em}
+h1{font-size:clamp(28px,4.4vw,48px); font-weight:900}
+h2{font-size:clamp(24px,3.4vw,34px); font-weight:700}
+h3{font-size:clamp(20px,2.2vw,24px); font-weight:700}
+p{margin:0 0 16px}
+.center{text-align:center}
+.mut{color:var(--mut)}
+section{padding:72px 0}
+@media(max-width:700px){section{padding:48px 0}}
+
+/* nav */
+nav{position:sticky; top:0; z-index:50; background:#fff; border-bottom:1px solid var(--line)}
+nav .bar{display:flex; align-items:center; gap:26px; height:76px}
+.logo{font-weight:900; font-size:19px; letter-spacing:-.02em; color:var(--navy); text-decoration:none; white-space:nowrap}
+.logo b{color:var(--gold)}
+nav ul{display:none; list-style:none; gap:22px; margin:0; padding:0; flex:1}
+nav ul a{font-size:15px; font-weight:600; text-decoration:none; color:#1b1b1b}
+nav ul a:hover{color:var(--gold)}
+@media(min-width:960px){ nav ul{display:flex} }
+.nav-right{margin-left:auto; display:flex; align-items:center; gap:18px}
+.login{font-size:15px; font-weight:600; color:var(--gold); text-decoration:none; display:none}
+@media(min-width:760px){ .login{display:inline} }
+
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; height:50px; padding:0 26px;
+  background:var(--gold); color:#1a1205; border:0; border-radius:var(--r); cursor:pointer;
+  font-family:inherit; font-size:16px; font-weight:700; text-decoration:none; white-space:nowrap}
+.btn:hover{filter:brightness(1.05)}
+.btn.sm{height:44px; padding:0 20px; font-size:15px}
+.btn.ghost{background:transparent; color:#fff; border:2px solid rgba(255,255,255,.45)}
+
+/* hero */
+.hero{padding-top:52px}
+.hero h1{color:var(--navy); text-align:center; margin-bottom:36px}
+.hero-grid{display:grid; gap:20px; grid-template-columns:1fr}
+@media(min-width:900px){ .hero-grid{grid-template-columns:320px 1fr} }
+.stat{background:#fff; border-radius:var(--rl); padding:26px 24px}
+.stat b{display:block; font-size:40px; font-weight:800; color:var(--gold); line-height:1; margin-bottom:10px}
+.stat span{font-size:15px; color:#25272f}
+.stat cite{display:block; margin-top:10px; font-size:12.5px; font-style:normal; color:#8a8d97}
+.demo{background:#fff; border-radius:var(--rl); padding:28px}
+.demo h2{text-align:center}
+.screen{aspect-ratio:16/9; border:3px solid var(--navy); border-radius:var(--r); background:#0e1020;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;
+  color:#8b8fa0; font-size:14px; text-align:center; padding:22px}
+.play{width:62px; height:62px; border-radius:50%; background:var(--gold); display:flex; align-items:center; justify-content:center}
+
+/* faixa escura */
+.dark{background:var(--navy); color:#fff}
+.dark h1,.dark h2{color:#fff}
+.dark p{color:var(--mut-dark)}
+.feat{display:grid; gap:28px; align-items:center; grid-template-columns:1fr; padding:44px 0; border-bottom:1px solid rgba(255,255,255,.09)}
+.feat:last-child{border-bottom:0}
+@media(min-width:900px){
+  .feat{grid-template-columns:1fr 1fr; gap:56px}
+  .feat.rev .txt{order:2}
+}
+.feat h3{color:var(--gold); display:flex; align-items:center; gap:10px}
+.feat .ico{width:38px; height:38px; border-radius:9px; background:rgba(232,167,67,.16);
+  display:flex; align-items:center; justify-content:center; flex:0 0 38px}
+.shot{border-radius:var(--rl); border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.04);
+  aspect-ratio:4/3; display:flex; align-items:center; justify-content:center; text-align:center;
+  color:#8b8fa0; font-size:13.5px; padding:22px}
+
+/* faixa de cta */
+.band{background:var(--navy); padding:56px 0; text-align:center}
+.band h2{color:#fff; max-width:760px; margin-left:auto; margin-right:auto}
+.band p{color:var(--mut-dark); max-width:640px; margin-left:auto; margin-right:auto}
+
+/* processo */
+.steps{display:grid; gap:20px; grid-template-columns:1fr}
+@media(min-width:900px){ .steps{grid-template-columns:repeat(3,1fr)} }
+.step{background:#fff; border-radius:var(--rl); padding:28px 24px}
+.step .tag{display:inline-block; font-size:13px; font-weight:700; color:var(--gold); margin-bottom:8px}
+.step h3{color:var(--navy)}
+
+/* prova */
+.wall{display:grid; gap:18px; grid-template-columns:1fr}
+@media(min-width:760px){ .wall{grid-template-columns:repeat(2,1fr)} }
+@media(min-width:1040px){ .wall{grid-template-columns:repeat(3,1fr)} }
+.card{background:#fff; border-radius:var(--rl); padding:26px 24px}
+.card h3{color:var(--navy); font-size:19px}
+.empty{border:2px dashed #c9cbd2; border-radius:var(--rl); padding:30px 24px; text-align:center;
+  color:#7c808c; font-size:14px; background:#fafafa}
+
+/* rodapé */
+footer{background:var(--navy); color:var(--mut-dark); padding:56px 0 34px; font-size:14.5px}
+footer h4{color:#fff; font-size:13px; letter-spacing:.12em; text-transform:uppercase; margin:0 0 14px}
+footer a{color:var(--mut-dark); text-decoration:none; display:block; padding:5px 0}
+footer a:hover{color:var(--gold)}
+.fgrid{display:grid; gap:30px; grid-template-columns:1fr}
+@media(min-width:760px){ .fgrid{grid-template-columns:1.4fr 1fr 1fr 1fr} }
+.legal{border-top:1px solid rgba(255,255,255,.12); margin-top:34px; padding-top:20px; font-size:13px; color:#9498a5}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap bar">
+    <a class="logo" href="index.html">[MAR<b>CA</b>]</a>
+    <ul>
+      <li><a href="#o-que-e">O que é</a></li>
+      <li><a href="#processo">Como funciona</a></li>
+      <li><a href="#prova">Prova</a></li>
+      <li><a href="landing-vsl.html">Preço</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="login" href="#prova">Ver a prova</a>
+      <a class="btn sm js-wa" href="#">Falar comigo</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═════ HERO ═════ -->
+<section class="hero">
+  <div class="wrap">
+    <h1>Site que funciona</h1>
+
+    <div class="hero-grid">
+      <div style="display:grid; gap:20px; align-content:start">
+        <div class="stat">
+          <b>~60%</b>
+          <span>do volume de lead em home service nos EUA ainda vem de indicação — o seu instinto tá certo, o problema é o pedaço que falta.</span>
+          <cite>Jobber, que perguntou pra mais de mil prestador</cite>
+        </div>
+        <div class="stat">
+          <b>1/3</b>
+          <span>do que decide quem aparece nos três primeiros do Google vem do próprio perfil do Google Business Profile.</span>
+          <cite>Hook Agency</cite>
+        </div>
+        <div class="stat">
+          <b>50+</b>
+          <span>review é o corte: negócio local com mais de 50 pega bem mais lead que negócio com menos de 10, e quase todo mundo lê review antes de contratar.</span>
+          <cite>BrightLocal</cite>
+        </div>
+      </div>
+
+      <div class="demo">
+        <h2>Vê a demonstração aqui embaixo</h2>
+        <div class="screen">
+          <div class="play"><svg width="22" height="22" viewBox="0 0 24 24" fill="#1a1205" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+          <div>[DEMONSTRAÇÃO DE TELA — ainda não gravada]<br>Compartilhamento de tela mostrando o site pronto, o formulário de quote e o SMS chegando.</div>
+        </div>
+        <p class="mut" style="margin:18px 0 0; font-size:14.5px; text-align:center">
+          $297 por mês. Sem contrato, sem taxa de setup, no ar em 10 dias úteis. Você não paga nada até o site estar no ar e você aprovar.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ O QUE É ═════ -->
+<section class="dark" id="o-que-e">
+  <div class="wrap">
+    <h1 class="center" style="margin-bottom:8px">O que é o site que funciona?</h1>
+    <p class="center" style="max-width:720px; margin:0 auto 20px">
+      Não é site bonito. É site que faz a americana da sua cidade te achar em inglês, te dar credibilidade em cinco segundos e começar a conversa sozinho.
+    </p>
+
+    <div class="feat">
+      <div class="txt">
+        <h3><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8A743" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span> Ser achado no Google de verdade</h3>
+        <p>Todo site que eu monto sai indexado e seguindo o que o Google pede. Antes de construir eu faço a pesquisa de palavra-chave por serviço e por cidade, e monto title, meta description, H1, H2, schema e alt tag em cima disso. Velocidade de carregamento e SSL entram junto.</p>
+        <p>São de 15 a 20 páginas, com <strong>uma página separada pra cada serviço que você faz</strong> — porque o Google não ranqueia "empresa de limpeza", ele ranqueia <span lang="en">move out cleaning Framingham MA</span>.</p>
+      </div>
+      <div class="shot">[PRINT: página de serviço em inglês + o resultado dela no Google]</div>
+    </div>
+
+    <div class="feat rev">
+      <div class="txt">
+        <h3><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="#E8A743" aria-hidden="true"><path d="M12 2l2.9 6.3 6.8.8-5 4.6 1.3 6.7L12 17l-6 3.4 1.3-6.7-5-4.6 6.8-.8z"/></svg></span> Seus melhores review na cara do cliente</h3>
+        <p>Reputação online é o que decide quem liga pra você e quem liga pro concorrente. Seus review de 5 estrelas ficam em destaque em toda página do site, atualizados sozinhos.</p>
+        <p>E o funil que gera esses review roda junto: terminou o job, o sistema pede sozinho. 4 ou 5 estrelas vão direto pro seu Google; abaixo disso vira feedback privado no seu WhatsApp e não é publicado.</p>
+      </div>
+      <div class="shot">[PRINT: bloco de review no site + o funil de avaliação por SMS]</div>
+    </div>
+
+    <div class="feat">
+      <div class="txt">
+        <h3><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8A743" stroke-width="2" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span> Feito pro celular, que é onde ele te procura</h3>
+        <p>Cliente de serviço local procura no celular, parado no trânsito ou dentro de casa olhando a parede que precisa de pintura. Se o seu site demora ou fica torto na tela dele, acabou ali.</p>
+        <p>Telefone clicável no topo, botão de orçamento grande o suficiente pra acertar com o polegar, carregamento rápido e nada de menu que só funciona no computador.</p>
+      </div>
+      <div class="shot">[PRINT: o mesmo site no celular, com o telefone clicável em destaque]</div>
+    </div>
+
+    <div class="feat rev">
+      <div class="txt">
+        <h3><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8A743" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4L3 21l1.1-4.6A8.4 8.4 0 1 1 21 11.5Z"/></svg></span> Começa a conversa por SMS na hora</h3>
+        <p>Americano não fica trocando e-mail pra pedir orçamento. O site tem formulário de quote e chat que abrem uma conversa por mensagem na hora — e como o telefone fica capturado, você consegue voltar a falar com a pessoa mesmo se ela sair do site.</p>
+        <p>Pra você isso não é automação, é <strong>prótese de idioma</strong>: quem responde primeiro é o sistema, em inglês, por escrito — e você lê com calma.</p>
+        <p class="mut" style="font-size:14px"><strong style="color:#fff">Limitação dita agora, não na letra miúda:</strong> o robô não atende o telefone falando inglês por você. Isso é outro produto e eu não vendo hoje.</p>
+      </div>
+      <div class="shot">[PRINT: formulário de quote + o SMS de confirmação chegando no celular]</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ FAIXA CTA ═════ -->
+<div class="band">
+  <div class="wrap">
+    <h2>Quer marcar uma hora pra conversar?</h2>
+    <p>Eu te mostro tudo que eu faço pra você crescer — pra você fazer sozinho, se quiser, ou pra eu fazer por você.</p>
+    <div style="margin-top:22px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap">
+      <a class="btn js-wa" href="#">Me chama no WhatsApp</a>
+      <a class="btn ghost" href="#prova">Antes disso, vê a prova</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═════ PROCESSO ═════ -->
+<section id="processo">
+  <div class="wrap">
+    <h1 class="center" style="color:var(--navy); margin-bottom:32px">Como é trabalhar comigo…</h1>
+    <div class="steps">
+      <div class="step">
+        <span class="tag">Call de demonstração (20 min)</span>
+        <h3>É uma call de venda. Eu só não quis te assustar chamando de call de venda.</h3>
+        <p class="mut">Mas falando sério: eu compartilho a tela, mostro conta rodando de verdade, disparo o SMS no seu celular ao vivo e leio em português o texto exato dos SMS em inglês que vão sair com o seu nome. No fim eu pego a forma de pagamento — e não cobro nada ainda.</p>
+      </div>
+      <div class="step">
+        <span class="tag">A gente monta (10 dias úteis)</span>
+        <h3>Você preenche um formulário curto, em português</h3>
+        <p class="mut">Nome do negócio, serviços, cidades que você atende, fotos de job, acesso ao Google. Leva 10 minutos, ou manda tudo por áudio no WhatsApp que eu preencho. O prazo começa a contar aí — primeiro a bola tá com você.</p>
+      </div>
+      <div class="step">
+        <span class="tag">Call de lançamento (25 min)</span>
+        <h3>Eu te mostro como funciona tudo</h3>
+        <p class="mut">E por "tudo" a gente tá falando de apertar dois botões. Traduzo cada SMS automático linha por linha pra você aprovar. Aí sim eu cobro os $297, e é aí que começam a contar os seus 30 dias de garantia — do dia que o site foi ao ar, não do dia que você falou sim.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ PROVA ═════ -->
+<section id="prova" style="background:#fff">
+  <div class="wrap">
+    <h1 class="center" style="color:var(--navy); margin-bottom:8px">Aqui é onde entra a parede de depoimento.</h1>
+    <p class="center mut" style="max-width:760px; margin:0 auto 32px">
+      Eu não tenho nenhum ainda. Seria fácil inventar um Carlos de Framingham dizendo que triplicou o faturamento — numa comunidade em que todo mundo tá no mesmo grupo de WhatsApp, descobrem em uma semana e eu queimo meu nome pra sempre. Então, em vez de depoimento, eu te mostro a coisa funcionando.
+    </p>
+
+    <div class="wall">
+      <div class="card">
+        <h3>A auditoria gravada, antes de qualquer call</h3>
+        <p class="mut">Eu jogo o seu serviço no Google, na sua cidade, em inglês, gravo a tela e te mostro quem tá nos três primeiros, quantos review cada um tem e o que tem no site deles que não tem no seu. Em português, no WhatsApp, de graça.</p>
+      </div>
+      <div class="card">
+        <h3>O SMS no seu celular, ao vivo na call</h3>
+        <p class="mut">Você me passa o número, eu ligo, você não atende, e o SMS em inglês chega na sua tela enquanto a gente ainda tá conversando. Você cronometra, em vez de acreditar em mim.</p>
+      </div>
+      <div class="card">
+        <h3>O print do seu Google contra os três primeiros</h3>
+        <p class="mut">A prova mais dolorosa que existe, e ela não é sobre mim. É sobre você. Os dados que eu cito estão todos com a fonte no nome — BrightLocal, Hook Agency, Jobber. Não acredita em mim? Vai lá conferir.</p>
+      </div>
+      <div class="empty">[AQUI ENTRA O VÍDEO CRU DE CELULAR DO PRIMEIRO CLIENTE]<br>Sem edição, sem legenda, na frente da van.</div>
+      <div class="empty">[AQUI ENTRA O SEGUNDO]<br>Quando existir. Não antes.</div>
+      <div class="empty">[E O TERCEIRO]<br>Este texto de honestidade continua na página quando eles chegarem — só desce pra baixo deles.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ FECHO ═════ -->
+<div class="band">
+  <div class="wrap">
+    <h2>Quer saber como fica no seu caso?</h2>
+    <p>$297 por mês, sem contrato, sem taxa de setup. Você não paga nada até o site estar no ar e você aprovar, e depois disso tem 30 dias pra pedir o dinheiro de volta por qualquer motivo. O que eu não garanto, e quero escrito: número de lead, número de job, posição no Google, prazo pra ranquear.</p>
+    <div style="margin-top:22px">
+      <a class="btn js-wa" href="#">Me chama no WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═════ RODAPÉ ═════ -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="index.html" style="color:#fff; font-size:22px">[MAR<b>CA</b>]</a>
+        <p style="margin-top:14px">Site em inglês e marketing automatizado para brasileiro dono de empresa de serviço nos Estados Unidos. $297/mês, sem contrato, no ar em 10 dias úteis.</p>
+        <p>Atendimento em português, no WhatsApp, de segunda a sábado — pode mandar áudio.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <a href="landing-vsl.html">Preço</a>
+        <a href="#prova">Prova</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#o-que-e">O que é</a>
+      </div>
+      <div>
+        <h4>Produtos</h4>
+        <a href="index.html">Site que funciona</a>
+        <a href="landing-vsl.html#sistema">Resposta automática de ligação perdida</a>
+        <a href="landing-vsl.html#sistema">Funil de review 5 estrelas</a>
+        <a href="landing-vsl.html#sistema">Google Business Profile</a>
+        <a href="landing-vsl.html#sistema">Campanha de recompra e indicação</a>
+      </div>
+      <div>
+        <h4>Serviço adicional</h4>
+        <a href="landing-vsl.html">Gestão de Google Ads</a>
+        <a href="landing-vsl.html">Local Services Ads</a>
+        <a href="landing-vsl.html">Placa, adesivo e cartão</a>
+        <a href="landing-vsl.html">Telefone comercial</a>
+      </div>
+    </div>
+
+    <div class="legal">
+      <p>Os créditos de SMS são cobrados à parte, no custo do Twilio — normalmente entre $10 e $20 por mês. Eu não ganho nada em cima disso.</p>
+      <p>Eu não prometo número de lead, número de job, posição no Google nem prazo para ranquear. Nada nesta página deve ser lido como promessa de resultado.</p>
+      <p><a href="privacidade.html" style="display:inline">Política de Privacidade</a> · <a href="termos.html" style="display:inline">Termos de Uso</a> · © <span data-ano></span> [MARCA]. Eu não sou afiliado nem patrocinado por Google, Meta, WhatsApp ou Twilio.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ==================== TROCAR AQUI ==================== */
+  var MARCA    = "[MARCA]";
+  var WHATSAPP = "15085551234";   // só dígitos, com código do país
+  var MSG      = "Oi! Vi a página do site. Quero saber como fica pro meu caso.";
+  /* ===================================================== */
+
+  var qs = new URLSearchParams(location.search);
+  var origem = (qs.get("utm_content") || qs.get("utm_campaign") || "").slice(0, 40);
+
+  document.querySelectorAll(".js-wa").forEach(function(a){
+    var txt = a.dataset.msg || MSG;
+    if (origem) txt += "\n\n(ref: " + origem + ")";
+    a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(txt);
+    a.target = "_blank"; a.rel = "noopener";
+    a.addEventListener("click", function(){
+      if (typeof fbq === "function") fbq("track", "Contact");
+    });
+  });
+  document.querySelectorAll("[data-ano]").forEach(function(el){ el.textContent = new Date().getFullYear(); });
+</script>
+</body>
+</html>
